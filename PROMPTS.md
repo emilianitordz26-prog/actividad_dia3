@@ -8,4 +8,7 @@ Prompt:
 
 Prompt:
 "Genera en Bash un módulo que busque de manera recursiva dentro de una carpeta todos los archivos que contengan una palabra o frase indicada por el usuario. La palabra o frase se encuentra almacenada en la variable PALABRA y la ruta en la variable RUTA. La búsqueda debe incluir las subcarpetas y mostrar las rutas de los archivos encontrados. Agrega comentarios para documentar el código."
+## Emiliano - Formato de salida y conteo
 
+Prompt:
+"Genera en Bash un módulo que reciba los archivos encontrados por un motor de búsqueda recursiva y cuente cuántas veces aparece una palabra o frase en cada archivo. La palabra o frase está almacenada en la variable PALABRA y la ruta en RUTA. La salida debe mostrar la ruta de cada archivo y el número de ocurrencias encontradas. Agrega comentarios para documentar las partes principales del código."

@@ -30,5 +30,11 @@ echo ""
 echo "Buscando archivos que contienen: '$PALABRA'"
 echo "Resultados encontrados:"
 
-grep -ril -- "$PALABRA" "$RUTA"
+# Módulo de formato de salida y conteo
+# Autor: Emiliano
+# Cuenta cuántas veces aparece la palabra o frase en cada archivo encontrado.
 
+while IFS= read -r ARCHIVO; do
+    CONTEO=$(grep -oFi -- "$PALABRA" "$ARCHIVO" 2>/dev/null | wc -l | tr -d ' ')
+    echo "$ARCHIVO : $CONTEO ocurrencia(s)"
+done < <(grep -ril -- "$PALABRA" "$RUTA")
