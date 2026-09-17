@@ -22,3 +22,13 @@ fi
 echo "Argumentos válidos."
 echo "Palabra o frase a buscar: $PALABRA"
 echo "Carpeta a analizar: $RUTA"
+# Módulo del motor de búsqueda
+# Autor: Sofia
+# Busca recursivamente los archivos que contienen la palabra o frase indicada.
+
+echo ""
+echo "Buscando archivos que contienen: '$PALABRA'"
+echo "Resultados encontrados:"
+
+grep -ril -- "$PALABRA" "$RUTA"
+
